@@ -54,8 +54,12 @@
 
 
 .striped-circle{
-    display: inline;
-    width: 50px;
+    @include mask-parameter;
+    display: block;
+    width: 100px;
     aspect-ratio: 1;
-    background: repeating-linear-gradient(#e66465, #e66465 20px, #9198e5 20px, #9198e5 25px);
+    -webkit-mask-image: url(../img/stripedcircle.svg);
+    mask-image: url(../img/stripedcircle.svg);
+    
+    background: $whitecolor;
 }

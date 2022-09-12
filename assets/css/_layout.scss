@@ -65,6 +65,7 @@ header {
 }
 
 .herobanner {
+  position: relative;
   &__title {
     font-size: 70px;
     color: $whitecolor;
@@ -88,18 +89,42 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    span {
-      &:first-child {
-        -webkit-mask-image: url(../img/bannergrid.svg);
-        mask-image: url(../img/bannergrid.svg);
-        @include mask-parameter;
-        background: linear-gradient(180deg, #FFFFFF -52.46%, rgba(255, 255, 255, 0) 42.25%);
-        width: 210px;
-        aspect-ratio: 1.147;
-        display: block;
-      }
-
-      &:last-child {}
+    span{
+      position: absolute;
+    }
+    .grid{
+      -webkit-mask-image: url(../img/bannergrid.svg);
+      mask-image: url(../img/bannergrid.svg);
+      @include mask-parameter;
+      background: linear-gradient(180deg, #FFFFFF -52.46%, rgba(255, 255, 255, 0) 100%);
+      width: 210px;
+      aspect-ratio: 1.147;
+      display: block;
+      left: 0;
+      top: 0;
+    }
+    .striped-circle{
+      display: none;
+    }
+    .purple{
+      display: block;
+      left: -17px;
+      top: 0;
+      background: #7c3eff;
+      filter: blur(500px);
+      transform: matrix(1, 0, 0, -1, 0, 0);
+      width: 222px;
+      aspect-ratio: 1;
+    }
+    .dash{
+      -webkit-mask-image: url(../img/herodashline.svg);
+      mask-image: url(../img/herodashline.svg);
+      @include mask-parameter;
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 100%;
+      top: 0;
     }
   }
 }
