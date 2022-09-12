@@ -1,0 +1,43 @@
+$bodytext: #3f4147;
+$titlecolor: #0A142F;
+$whitecolor: #fff;
+$primarycolor: #FFC93E;
+$secondarycolor: #22B5BE;
+$supportive: #F3F5F6;
+$blueaccent: #7A8194;
+$tertiary: #34F960;
+$background: $titlecolor;
+$whitesecond: #E0E5F3;
+$whitethird: #353F5B;
+
+
+.container-24 {
+    padding: 0 24px;
+    width: 100%;
+}
+
+
+body {
+    background-color: $background;
+    font-family: 'Inter', sans-serif;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        color: inherit;
+    }
+}
+
+@mixin mask-parameter {
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+
+}
