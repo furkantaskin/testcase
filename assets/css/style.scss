@@ -1,0 +1,47 @@
+// Variables
+$darknavy: #0A142F;
+// Overrides
+
+.container-24{
+    padding: 0 24px;
+    width: 100%;
+}
+
+
+// Styles
+
+body{
+    background-color: #0A142F;
+}
+
+header{
+    padding-top: 48px;
+    display: flex;
+
+    .navbar{
+        padding: 0;
+        &-brand{
+            padding: 0;
+            img{
+                height: 27px;
+            }
+        }
+        &-toggler{
+            display: flex;
+            flex-direction: column;
+            row-gap: 4px;
+            padding-right: 0;
+            &-icon{
+                position: relative;
+            background-image: unset;
+            width: 18px;
+            background-color: #fff;
+            border-radius: 3px;
+            height: 2px;
+            }
+            &:focus{
+                box-shadow: unset;
+            }
+        }
+    }
+}
